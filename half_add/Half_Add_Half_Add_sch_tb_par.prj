@@ -1,0 +1,2 @@
+verilog work "netgen/par/Half_Add_timesim.v"
+vhdl work "add_test.vhd"

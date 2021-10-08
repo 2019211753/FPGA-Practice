@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/EDA/half_add/All_Add.xst" -ofn "D:/EDA/half_add/All_Add.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Half_Add.ucf -p xc4vsx25-ff668-10 All_Add.ngc All_Add.ngd  

@@ -1,0 +1,2 @@
+sch2hdl,-intstyle,ise,-family,virtex4,-verilog,D:/EDA/All_Add/All_Add.vf,-w,D:/EDA/half_add/All_Add.sch
+sch2hdl,-intstyle,ise,-family,virtex4,-verilog,D:/EDA/All_Add/Half_Add.vf,-w,D:/EDA/half_add/Half_Add.sch

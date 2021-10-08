@@ -1,0 +1,40 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Half_Add.vf
+// /___/   /\     Timestamp : 10/08/2021 19:36:44
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family virtex4 -verilog D:/EDA/All_Add/Half_Add.vf -w D:/EDA/half_add/Half_Add.sch
+//Design Name: Half_Add
+//Device: virtex4
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Half_Add(A, 
+                B, 
+                CO, 
+                SO);
+
+    input A;
+    input B;
+   output CO;
+   output SO;
+   
+   
+   AND2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(CO));
+   XOR2  XLXI_2 (.I0(B), 
+                .I1(A), 
+                .O(SO));
+endmodule

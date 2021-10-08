@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\EDA\half_add\Half_Add.ncd
+OUTFILE=D:\EDA\half_add\Half_Add.bit
+FAMILY=Virtex4
+PART=xc4vsx25-10ff668
+WORKINGDIR=D:\EDA\half_add
+LICENSE=ISE
+USER_INFO=212311847_0_0_067

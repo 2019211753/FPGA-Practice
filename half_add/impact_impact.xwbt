@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\EDA\half_add\impact.xsl
+OUTFILE=D:\EDA\half_add\impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=D:\EDA\half_add
+LICENSE=iMPACT
+USER_INFO=iMPACT
