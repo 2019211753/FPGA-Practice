@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tes_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tes" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="404,440 ps"></ZoomStartTime>
+      <ZoomEndTime time="405,114 ps"></ZoomEndTime>
+      <Cursor1Time time="404,840 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="264"></NameColumnWidth>
+      <ValueColumnWidth column_width="172"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/tes/u0/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tes/u0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tes/u0/SNleds" type="array">
+      <obj_property name="ElementShortName">SNleds[2:0]</obj_property>
+      <obj_property name="ObjectShortName">SNleds[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tes/u0/WEleds" type="array">
+      <obj_property name="ElementShortName">WEleds[7:5]</obj_property>
+      <obj_property name="ObjectShortName">WEleds[7:5]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tes/u0/shi" type="logic">
+      <obj_property name="ElementShortName">shi</obj_property>
+      <obj_property name="ObjectShortName">shi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tes/u0/ge" type="array">
+      <obj_property name="ElementShortName">ge[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ge[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tes/u0/SNge" type="array">
+      <obj_property name="ElementShortName">SNge[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SNge[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tes/u0/SNshi" type="array">
+      <obj_property name="ElementShortName">SNshi[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SNshi[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tes/u0/seg_select" type="array">
+      <obj_property name="ElementShortName">seg_select[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg_select[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tes/u0/SNselect" type="array">
+      <obj_property name="ElementShortName">SNselect[4:0]</obj_property>
+      <obj_property name="ObjectShortName">SNselect[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tes/u0/times" type="array">
+      <obj_property name="ElementShortName">times[6:0]</obj_property>
+      <obj_property name="ObjectShortName">times[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tes/u0/nums" type="logic">
+      <obj_property name="ElementShortName">nums</obj_property>
+      <obj_property name="ObjectShortName">nums</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tes/u0/num" type="array">
+      <obj_property name="ElementShortName">num[10:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">num[10:0][7:0]</obj_property>
+   </wvobject>
+</wave_config>

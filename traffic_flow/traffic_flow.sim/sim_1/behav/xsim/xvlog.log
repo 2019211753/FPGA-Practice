@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Xilinx/LessonDesign/traffic_flow/traffic_flow.srcs/sources_1/new/traffic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module traffic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Xilinx/LessonDesign/traffic_flow/traffic_flow.srcs/sim_1/new/tes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tes
