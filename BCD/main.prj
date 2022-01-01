@@ -1,0 +1,4 @@
+verilog work "keyboard.v"
+verilog work "clock.v"
+verilog work "bcdop.v"
+verilog work "main.v"

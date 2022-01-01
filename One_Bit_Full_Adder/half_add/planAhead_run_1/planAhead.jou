@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Oct 08 17:35:38 2021
+# Process ID: 10124
+# Log file: D:/EDA/half_add/planAhead_run_1/planAhead.log
+# Journal file: D:/EDA/half_add/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/EDA/half_add/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin AA1 [get_ports A]
+endgroup
+startgroup
+set_property package_pin Y1 [get_ports B]
+endgroup
+startgroup
+set_property package_pin AA4 [get_ports CO]
+endgroup
+startgroup
+set_property package_pin Y5 [get_ports SO]
+endgroup
+save_constraints

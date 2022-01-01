@@ -1,0 +1,16 @@
+NET "clkin" LOC = AF12;
+
+NET "cpld_en(0)" LOC = AF19;
+NET "cpld_en(1)" LOC = AF23 ;
+
+NET "led_en(0)" LOC = AF24;
+NET "led_en(1)" LOC = AE24;
+NET "led_en(2)" LOC = AD25;
+
+NET "led(0)" Loc = AD20;
+NET "led(1)" Loc = AD21;
+NET "led(2)" Loc = AD22;
+NET "led(3)" Loc = AD23;
+NET "led(4)" Loc = AC21;
+NET "led(5)" Loc = AC22;
+NET "led(6)" Loc = AC23;

@@ -1,0 +1,68 @@
+
+****** PlanAhead v13.3
+  **** Build 147507 by hdbuild on Tue Oct  4 19:03:28 MDT 2011
+    ** Copyright 1986-1999, 2001-2011 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Device-25] Loading parts and site information from C:/Xilinx/13.3/ISE_DS/PlanAhead\parts\arch.xmlParsing RTL primitives file [C:/Xilinx/13.3/ISE_DS/PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/13.3/ISE_DS/PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+starting gui ...
+source C:/Xilinx/key_board/pa.fromNetlist.tcl
+# create_project -name key_board -dir "C:/Xilinx/key_board/planAhead_run_3" -part xc4vsx25ff668-10
+Parsing template File [C:/Xilinx/13.3/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [C:/Xilinx/13.3/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:/Xilinx/13.3/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [C:/Xilinx/13.3/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:/Xilinx/13.3/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:/Xilinx/13.3/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Xilinx/key_board/main.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Xilinx/key_board} }
+# set_property target_constrs_file "main.ucf" [current_fileset -constrset]
+Adding file 'C:\Xilinx\key_board\main.ucf' to fileset 'constrs_1'
+# add_files [list {main.ucf}] -fileset [get_property constrset [current_run]]
+# open_netlist_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to part: xc4vsx25ff668-10
+Release 13.3 - ngc2edif O.76xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.3 - ngc2edif O.76xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design main.ngc ...
+WARNING:NetListWriters:298 - No output is written to main.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file main.edif ...
+ngc2edif: Total memory usage is 63740 kilobytes
+
+Parsing EDIF File [.\planAhead_run_3\key_board.data\cache\main_ngc_84f7adac.edif]
+Finished Parsing EDIF File [.\planAhead_run_3\key_board.data\cache\main_ngc_84f7adac.edif]
+INFO: [PlanAhead-430] Reading macro library C:/Xilinx/13.3/ISE_DS/PlanAhead\./parts/xilinx/virtex4/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/13.3/ISE_DS/PlanAhead\./parts/xilinx/virtex4/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/13.3/ISE_DS/PlanAhead\./parts/xilinx/virtex4/hd_int_macros.edn]
+INFO: [Device-21] Reading bus macro file C:/Xilinx/13.3/ISE_DS/PlanAhead\./parts/xilinx/virtex4/pr_bus_macros.xmlLoading clock regions from C:/Xilinx/13.3/ISE_DS/PlanAhead\parts/xilinx/virtex4/virtex4sx/xc4vsx25/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/13.3/ISE_DS/PlanAhead\parts/xilinx/virtex4/virtex4sx/xc4vsx25/ClockBuffers.xml
+Loading package from C:/Xilinx/13.3/ISE_DS/PlanAhead\parts/xilinx/virtex4/virtex4sx/xc4vsx25/ff668/Package.xml
+Loading io standards from C:/Xilinx/13.3/ISE_DS/PlanAhead\./parts/xilinx/virtex4/IOStandards.xml
+INFO: [Device-19] Loading pkg sso from C:/Xilinx/13.3/ISE_DS/PlanAhead\parts/xilinx/virtex4/virtex4sx/xc4vsx25/ff668/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/13.3/ISE_DS/PlanAhead\./parts/xilinx/virtex4/drc.xml
+INFO: [Timing-77] Reading timing library C:/Xilinx/13.3/ISE_DS/PlanAhead\parts/xilinx/virtex4/virtex4sx/virtex4sx-10.lib.
+INFO: [Timing-34] Done reading timing library C:/Xilinx/13.3/ISE_DS/PlanAhead\parts/xilinx/virtex4/virtex4sx/virtex4sx-10.lib.
+Parsing UCF File [C:\Xilinx\key_board\main.ucf]
+Finished Parsing UCF File [C:\Xilinx\key_board\main.ucf]
+INFO: [PlanAhead-566] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (HD_IBUFG, HD_BUFG): 1 instances
+open_netlist_design: Time (s): 5.663w.  Memory (MB): 460.836p 87.641g
+startgroup
+startgroup
+set_property loc IOB_X0Y18 [get_ports {led[0]}]
+set_property loc IOB_X0Y18 [get_ports {led[0]}]
+endgroup
+endgroup

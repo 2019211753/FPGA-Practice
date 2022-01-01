@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Administrator\Desktop\key_board\main.ncd
+OUTFILE=C:\Users\Administrator\Desktop\key_board\main.bit
+FAMILY=Virtex4
+PART=xc4vsx25-10ff668
+WORKINGDIR=C:\Users\Administrator\Desktop\key_board
+LICENSE=ISE
+USER_INFO=212311847_0_0_067

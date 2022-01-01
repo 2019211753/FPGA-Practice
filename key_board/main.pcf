@@ -1,0 +1,28 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 09 17:35:34 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led<0>" LOCATE = SITE "AD20" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "AD21" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "AD22" LEVEL 1;
+COMP "clk" LOCATE = SITE "AF12" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "AD23" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "AC21" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "AC22" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "AC23" LEVEL 1;
+COMP "key_in<0>" LOCATE = SITE "AA19" LEVEL 1;
+COMP "key_in<1>" LOCATE = SITE "AE20" LEVEL 1;
+COMP "key_in<2>" LOCATE = SITE "Y19" LEVEL 1;
+COMP "key_in<3>" LOCATE = SITE "AF20" LEVEL 1;
+COMP "key_in<4>" LOCATE = SITE "W19" LEVEL 1;
+COMP "key_in<5>" LOCATE = SITE "AB22" LEVEL 1;
+COMP "cpld_en<0>" LOCATE = SITE "AF19" LEVEL 1;
+COMP "cpld_en<1>" LOCATE = SITE "AF23" LEVEL 1;
+COMP "key_out<0>" LOCATE = SITE "AB23" LEVEL 1;
+COMP "key_out<1>" LOCATE = SITE "Y25" LEVEL 1;
+COMP "key_out<2>" LOCATE = SITE "Y23" LEVEL 1;
+COMP "key_out<3>" LOCATE = SITE "Y22" LEVEL 1;
+COMP "led_en" LOCATE = SITE "AB25" LEVEL 1;
+SCHEMATIC END;
+

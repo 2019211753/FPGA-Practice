@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/EDA/Counter/counter.xst" -ofn "D:/EDA/Counter/counter.syr" 
+xst -intstyle ise -ifn "D:/EDA/Counter/counter.xst" -ofn "D:/EDA/Counter/counter.syr" 
+xst -intstyle ise -ifn "D:/EDA/Counter/counter.xst" -ofn "D:/EDA/Counter/counter.syr" 
+xst -intstyle ise -ifn "D:/EDA/Counter/counter.xst" -ofn "D:/EDA/Counter/counter.syr" 
+xst -intstyle ise -ifn "D:/EDA/Counter/counter.xst" -ofn "D:/EDA/Counter/counter.syr" 

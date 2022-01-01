@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : All_Add.vf
+// /___/   /\     Timestamp : 10/08/2021 19:36:44
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family virtex4 -verilog D:/EDA/All_Add/All_Add.vf -w D:/EDA/half_add/All_Add.sch
+//Design Name: All_Add
+//Device: virtex4
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Half_Add_MUSER_All_Add(A, 
+                              B, 
+                              CO, 
+                              SO);
+
+    input A;
+    input B;
+   output CO;
+   output SO;
+   
+   
+   AND2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(CO));
+   XOR2  XLXI_2 (.I0(B), 
+                .I1(A), 
+                .O(SO));
+endmodule
+`timescale 1ns / 1ps
+
+module All_Add(A, 
+               B, 
+               CIN, 
+               COUT, 
+               SUM);
+
+    input A;
+    input B;
+    input CIN;
+   output COUT;
+   output SUM;
+   
+   wire XLXN_1;
+   wire XLXN_7;
+   wire XLXN_8;
+   
+   Half_Add_MUSER_All_Add  XLXI_1 (.A(A), 
+                                  .B(B), 
+                                  .CO(XLXN_7), 
+                                  .SO(XLXN_1));
+   Half_Add_MUSER_All_Add  XLXI_2 (.A(CIN), 
+                                  .B(XLXN_1), 
+                                  .CO(XLXN_8), 
+                                  .SO(SUM));
+   OR2  XLXI_3 (.I0(XLXN_8), 
+               .I1(XLXN_7), 
+               .O(COUT));
+endmodule

@@ -1,0 +1,5 @@
+verilog work "key_scan.v"
+verilog work "clk_div.v"
+verilog work "main.v"
+verilog work "tsw.v"
+verilog work "C:/Xilinx/13.3/ISE_DS/ISE//verilog/src/glbl.v"

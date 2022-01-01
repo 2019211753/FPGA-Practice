@@ -1,0 +1,5 @@
+verilog isim_temp "key_scan.v"
+verilog isim_temp "clk_div.v"
+verilog isim_temp "main.v"
+verilog isim_temp "tsw.v"
+verilog isim_temp "F:/ISE1/14.7/ISE_DS/ISE//verilog/src/glbl.v"

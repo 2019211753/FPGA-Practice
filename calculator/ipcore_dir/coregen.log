@@ -1,0 +1,21 @@
+Initializing CoreGen with the user repository list from
+'C:\Users\Skywalker\AppData\Roaming\Xilinx\CoreGen\13.3\indexes\xil_index_map.xm
+l'.
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - 'D:\ISE\ISE_DS\ISE\coregen\' [reloaded]
+INFO:sim - Generating component instance 'my_dcm' of
+   'xilinx.com:ip:dcm_adv:13.1' from 'D:\ISE\ISE_DS\ISE\bin\nt\arwz.exe'.
+Customizing IP...
+Architecture Wizard completed successfully.
+Finished Customizing.
+Resolving generic values...
+Finished resolving generic values.
+INFO:sim - The selected IP does not support an ASY schematic symbol.
+INFO:sim - Finished generation of ASY schematic symbol.
+WARNING:sim - The chosen IP does not support an SYM schematic symbol.
+Generating FLIST file...
+INFO:sim - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'my_dcm'.

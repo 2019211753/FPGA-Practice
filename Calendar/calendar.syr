@@ -1,0 +1,563 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: calendar.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "calendar.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "calendar"
+Output Format                      : NGC
+Target Device                      : xc4vsx25-10-ff668
+
+---- Source Options
+Top Module Name                    : calendar
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "calendar.v" in library work
+Module <calendar> compiled
+No errors in compilation
+Analysis of file <"calendar.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <calendar> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <calendar>.
+Module <calendar> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <calendar>.
+    Related source file is "calendar.v".
+    Found 16x7-bit ROM for signal <seg$mux0000> created at line 169.
+    Found 4x4-bit multiplier for signal <$mult0000> created at line 107.
+    Found 1-bit register for signal <clk_new>.
+    Found 1-bit register for signal <clk_new_2>.
+    Found 32-bit up counter for signal <counter_reg1>.
+    Found 32-bit up counter for signal <counter_reg2>.
+    Found 4-bit register for signal <day0>.
+    Found 4-bit comparator greater for signal <day0$cmp_gt0000> created at line 101.
+    Found 33-bit comparator greater for signal <day0$cmp_gt0001> created at line 111.
+    Found 33-bit comparator greater for signal <day0$cmp_gt0002> created at line 136.
+    Found 33-bit comparator greater for signal <day0$cmp_gt0003> created at line 136.
+    Found 33-bit comparator greater for signal <day0$cmp_gt0004> created at line 143.
+    Found 33-bit comparator lessequal for signal <day0$cmp_le0000> created at line 136.
+    Found 33-bit comparator lessequal for signal <day0$cmp_le0001> created at line 136.
+    Found 33-bit comparator lessequal for signal <day0$cmp_le0002> created at line 143.
+    Found 4-bit adder for signal <day0$share0000>.
+    Found 4-bit up counter for signal <day1>.
+    Found 33-bit comparator greater for signal <day1$cmp_gt0000> created at line 136.
+    Found 33-bit comparator greater for signal <day1$cmp_gt0001> created at line 136.
+    Found 33-bit comparator greater for signal <day1$cmp_gt0002> created at line 143.
+    Found 4-bit comparator lessequal for signal <day1$cmp_le0000> created at line 101.
+    Found 32-bit register for signal <flag>.
+    Found 32-bit adder for signal <flag$share0000>.
+    Found 1-bit register for signal <leap>.
+    Found 32-bit register for signal <month>.
+    Found 4-bit register for signal <month0>.
+    Found 4-bit comparator greater for signal <month0$cmp_gt0000> created at line 116.
+    Found 33-bit comparator greater for signal <month0$cmp_gt0001> created at line 111.
+    Found 33-bit comparator lessequal for signal <month0$cmp_le0000> created at line 111.
+    Found 4-bit adder for signal <month0$share0000>.
+    Found 4-bit up counter for signal <month1>.
+    Found 4-bit comparator lessequal for signal <month1$cmp_le0000> created at line 116.
+    Found 4-bit register for signal <num>.
+    Found 8-bit adder carry out for signal <old_day_2$addsub0000> created at line 109.
+    Found 4x4-bit multiplier for signal <old_day_2$mult0000> created at line 109.
+    Found 8-bit adder carry out for signal <old_month_1$addsub0000> created at line 108.
+    Found 4x4-bit multiplier for signal <old_month_1$mult0000> created at line 108.
+    Found 7-bit register for signal <seg>.
+    Found 8-bit register for signal <seg_en>.
+    Found 4-bit up counter for signal <weekday0>.
+    Found 4-bit comparator lessequal for signal <weekday0$cmp_le0000> created at line 155.
+    Found 12-bit register for signal <year>.
+    Found 12-bit adder for signal <year$add0000> created at line 107.
+    Found 11-bit adder carry out for signal <year$addsub0001> created at line 107.
+    Found 4-bit up counter for signal <year0>.
+    Found 4-bit comparator greater for signal <year0$cmp_gt0000> created at line 124.
+    Found 4-bit up counter for signal <year1>.
+    Found 4-bit comparator lessequal for signal <year1$cmp_le0000> created at line 124.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   7 Counter(s).
+	inferred 106 D-type flip-flop(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred   3 Multiplier(s).
+	inferred  19 Comparator(s).
+Unit <calendar> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Multipliers                                          : 3
+ 4x4-bit multiplier                                    : 3
+# Adders/Subtractors                                   : 7
+ 11-bit adder carry out                                : 1
+ 12-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 8-bit adder carry out                                 : 2
+# Counters                                             : 7
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 5
+# Registers                                            : 11
+ 1-bit register                                        : 3
+ 12-bit register                                       : 1
+ 32-bit register                                       : 2
+ 4-bit register                                        : 3
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 19
+ 33-bit comparator greater                             : 8
+ 33-bit comparator lessequal                           : 4
+ 4-bit comparator greater                              : 3
+ 4-bit comparator lessequal                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <month_31> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_30> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_29> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_28> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_27> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_26> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_25> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_24> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_23> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_22> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_21> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_20> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_19> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_18> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_17> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_16> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_15> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_14> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_13> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_12> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_11> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_10> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <month_9> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <seg_en_7> (without init value) has a constant value of 1 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <year_2> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_3> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_4> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_5> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_6> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_7> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_8> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_9> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_10> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_11> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2404 -  FFs/Latches <month<31:9>> (without init value) have a constant value of 0 in block <calendar>.
+
+Synthesizing (advanced) Unit <calendar>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_seg_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <calendar> synthesized (advanced).
+WARNING:Xst:2677 - Node <year_2> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_3> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_4> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_5> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_6> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_7> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_8> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_9> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_10> of sequential type is unconnected in block <calendar>.
+WARNING:Xst:2677 - Node <year_11> of sequential type is unconnected in block <calendar>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Multipliers                                          : 3
+ 4x4-bit multiplier                                    : 3
+# Adders/Subtractors                                   : 7
+ 11-bit adder carry out                                : 1
+ 12-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 8-bit adder carry out                                 : 2
+# Counters                                             : 7
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 5
+# Registers                                            : 73
+ Flip-Flops                                            : 73
+# Comparators                                          : 19
+ 33-bit comparator greater                             : 8
+ 33-bit comparator lessequal                           : 4
+ 4-bit comparator greater                              : 3
+ 4-bit comparator lessequal                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <seg_en_7> (without init value) has a constant value of 1 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <calendar> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block calendar, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 156
+ Flip-Flops                                            : 156
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : calendar.ngr
+Top Level Output File Name         : calendar
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 566
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 93
+#      LUT2                        : 15
+#      LUT2_D                      : 4
+#      LUT3                        : 16
+#      LUT3_D                      : 1
+#      LUT3_L                      : 4
+#      LUT4                        : 153
+#      LUT4_D                      : 13
+#      LUT4_L                      : 9
+#      MUXCY                       : 131
+#      MUXF5                       : 6
+#      VCC                         : 1
+#      XORCY                       : 111
+# FlipFlops/Latches                : 156
+#      FD                          : 74
+#      FDE                         : 6
+#      FDR                         : 70
+#      FDS                         : 6
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      OBUF                        : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vsx25ff668-10 
+
+ Number of Slices:                      166  out of  10240     1%  
+ Number of Slice Flip Flops:            156  out of  20480     0%  
+ Number of 4 input LUTs:                316  out of  20480     1%  
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    320     5%  
+ Number of GCLKs:                         3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 66    |
+clk_new1                           | BUFG                   | 40    |
+clk_new_21                         | BUFG                   | 50    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -10
+
+   Minimum period: 6.135ns (Maximum Frequency: 162.987MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.677ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.203ns (frequency: 237.901MHz)
+  Total number of paths / destination ports: 3170 / 132
+-------------------------------------------------------------------------
+Delay:               4.203ns (Levels of Logic = 9)
+  Source:            counter_reg1_8 (FF)
+  Destination:       counter_reg1_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: counter_reg1_8 to counter_reg1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.360   0.758  counter_reg1_8 (counter_reg1_8)
+     LUT4:I0->O            1   0.195   0.000  clk_new_cmp_eq0000_wg_lut<0> (clk_new_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.366   0.000  clk_new_cmp_eq0000_wg_cy<0> (clk_new_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.045   0.000  clk_new_cmp_eq0000_wg_cy<1> (clk_new_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.045   0.000  clk_new_cmp_eq0000_wg_cy<2> (clk_new_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.045   0.000  clk_new_cmp_eq0000_wg_cy<3> (clk_new_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.045   0.000  clk_new_cmp_eq0000_wg_cy<4> (clk_new_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.045   0.000  clk_new_cmp_eq0000_wg_cy<5> (clk_new_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.045   0.000  clk_new_cmp_eq0000_wg_cy<6> (clk_new_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          33   0.263   0.932  clk_new_cmp_eq0000_wg_cy<7> (clk_new_cmp_eq0000)
+     FDR:R                     1.062          counter_reg1_0
+    ----------------------------------------
+    Total                      4.203ns (2.514ns logic, 1.690ns route)
+                                       (59.8% logic, 40.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_new1'
+  Clock period: 6.135ns (frequency: 162.987MHz)
+  Total number of paths / destination ports: 25802 / 48
+-------------------------------------------------------------------------
+Delay:               6.135ns (Levels of Logic = 8)
+  Source:            month1_0 (FF)
+  Destination:       month0_2 (FF)
+  Source Clock:      clk_new1 rising
+  Destination Clock: clk_new1 rising
+
+  Data Path: month1_0 to month0_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              11   0.360   0.663  month1_0 (month1_0)
+     LUT2:I1->O            1   0.195   0.000  Madd_old_month_1_addsub0000_lut<1> (Madd_old_month_1_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.366   0.000  Madd_old_month_1_addsub0000_cy<1> (Madd_old_month_1_addsub0000_cy<1>)
+     XORCY:CI->O          11   0.360   0.828  Madd_old_month_1_addsub0000_xor<2> (old_month_1_addsub0000<2>)
+     LUT4:I1->O            1   0.195   0.523  day0_and000317_SW0 (N93)
+     LUT4:I3->O            2   0.195   0.540  day0_and000331 (day0_and0003)
+     LUT2:I1->O            3   0.195   0.600  day0_and000028_SW0 (N25)
+     LUT4_D:I2->O          3   0.195   0.703  month0_not00011 (month0_not0001)
+     LUT4:I1->O            1   0.195   0.000  month0_2_rstpot (month0_2_rstpot)
+     FD:D                      0.022          month0_2
+    ----------------------------------------
+    Total                      6.135ns (2.278ns logic, 3.857ns route)
+                                       (37.1% logic, 62.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_new_21'
+  Clock period: 5.789ns (frequency: 172.730MHz)
+  Total number of paths / destination ports: 4837 / 56
+-------------------------------------------------------------------------
+Delay:               5.789ns (Levels of Logic = 12)
+  Source:            flag_22 (FF)
+  Destination:       num_0 (FF)
+  Source Clock:      clk_new_21 rising
+  Destination Clock: clk_new_21 rising
+
+  Data Path: flag_22 to num_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.360   0.758  flag_22 (flag_22)
+     LUT4:I0->O            1   0.195   0.000  seg_en_cmp_eq00001_wg_lut<1> (seg_en_cmp_eq00001_wg_lut<1>)
+     MUXCY:S->O            1   0.366   0.000  seg_en_cmp_eq00001_wg_cy<1> (seg_en_cmp_eq00001_wg_cy<1>)
+     MUXCY:CI->O           1   0.044   0.000  seg_en_cmp_eq00001_wg_cy<2> (seg_en_cmp_eq00001_wg_cy<2>)
+     MUXCY:CI->O           1   0.044   0.000  seg_en_cmp_eq00001_wg_cy<3> (seg_en_cmp_eq00001_wg_cy<3>)
+     MUXCY:CI->O           1   0.045   0.000  seg_en_cmp_eq00001_wg_cy<4> (seg_en_cmp_eq00001_wg_cy<4>)
+     MUXCY:CI->O           1   0.045   0.000  seg_en_cmp_eq00001_wg_cy<5> (seg_en_cmp_eq00001_wg_cy<5>)
+     MUXCY:CI->O           1   0.045   0.000  seg_en_cmp_eq00001_wg_cy<6> (seg_en_cmp_eq00001_wg_cy<6>)
+     MUXCY:CI->O          17   0.369   0.743  seg_en_cmp_eq00001_wg_cy<7> (seg_en_cmp_eq00001_wg_cy<7>)
+     LUT4_D:I3->O         34   0.195   1.264  seg_en_cmp_eq00051 (seg_en_cmp_eq0005)
+     LUT4:I1->O            1   0.195   0.000  num_mux0000<3>75_F (N129)
+     MUXF5:I0->O           1   0.382   0.523  num_mux0000<3>75 (num_mux0000<3>75)
+     LUT4:I3->O            1   0.195   0.000  num_3_rstpot (num_3_rstpot)
+     FD:D                      0.022          num_3
+    ----------------------------------------
+    Total                      5.789ns (2.502ns logic, 3.287ns route)
+                                       (43.2% logic, 56.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_new_21'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              4.677ns (Levels of Logic = 1)
+  Source:            seg_en_6 (FF)
+  Destination:       led_en<6> (PAD)
+  Source Clock:      clk_new_21 rising
+
+  Data Path: seg_en_6 to led_en<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.360   0.360  seg_en_6 (seg_en_6)
+     OBUF:I->O                 3.957          led_en_6_OBUF (led_en<6>)
+    ----------------------------------------
+    Total                      4.677ns (4.317ns logic, 0.360ns route)
+                                       (92.3% logic, 7.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.58 secs
+ 
+--> 
+
+Total memory usage is 4547528 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   46 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

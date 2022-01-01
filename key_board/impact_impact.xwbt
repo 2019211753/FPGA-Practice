@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\eda\key_board\impact.xsl
+OUTFILE=E:\eda\key_board\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=E:\eda\key_board
+LICENSE=iMPACT
+USER_INFO=iMPACT

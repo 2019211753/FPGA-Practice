@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/eda/key_board/tsw_isim_beh.exe" -prj "E:/eda/key_board/tsw_beh.prj" "work.tsw" "work.glbl" 

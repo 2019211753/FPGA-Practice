@@ -1,0 +1,31 @@
+NET "clk" LOC = AF12;
+
+NET "cpld_en(1)" LOC = AF23;
+NET "cpld_en(0)" LOC = AF19;
+
+NET "led_en(3)" LOC=AB25;
+NET "led_en(2)" LOC=AC26;
+NET "led_en(1)" LOC=AC25;
+NET "led_en(0)" LOC=AD26;
+
+NET "led(7)" LOC=AC24;
+NET "led(6)" LOC=AC23;
+NET "led(5)" LOC=AC22;
+NET "led(4)" LOC=AC21;
+NET "led(3)" LOC=AD23;
+NET "led(2)" LOC=AD22;
+NET "led(1)" LOC=AD21;
+NET "led(0)" LOC=AD20;
+
+
+NET "key_in(0)" LOC=AA19;
+NET "key_in(1)" LOC=AE20;
+NET "key_in(2)" LOC=Y19;
+NET "key_in(3)" LOC=AF20;
+NET "key_in(4)" LOC=W19;
+NET "key_in(5)" LOC=AB22;
+
+NET "key_out(0)" LOC=AB23;
+NET "key_out(1)" LOC=Y25;
+NET "key_out(2)" LOC=Y23;
+NET "key_out(3)" LOC=Y22;

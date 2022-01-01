@@ -1,0 +1,3 @@
+verilog isim_temp "bcdop.v"
+verilog isim_temp "cons.v"
+verilog isim_temp "F:/ISE1/14.7/ISE_DS/ISE//verilog/src/glbl.v"

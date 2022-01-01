@@ -1,0 +1,4 @@
+verilog work "my_dcm.v"
+verilog work "key_scan.v"
+verilog work "clk_div.v"
+verilog work "main.v"

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/EDA/flowing_light/flowing_light.srcs/sources_1/new/flowing_light.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flowing
+ERROR: [VRFC 10-4982] syntax error near 'non-printable character with the hex value '0xb7'' [D:/EDA/flowing_light/flowing_light.srcs/sources_1/new/flowing_light.v:15]
+ERROR: [VRFC 10-2865] module 'flowing' ignored due to previous errors [D:/EDA/flowing_light/flowing_light.srcs/sources_1/new/flowing_light.v:2]

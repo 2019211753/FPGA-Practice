@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Dec 29 14:14:23 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "AF12" LEVEL 1;
+COMP "led_en<0>" LOCATE = SITE "AB25" LEVEL 1;
+COMP "led_en<1>" LOCATE = SITE "AC26" LEVEL 1;
+COMP "led_en<2>" LOCATE = SITE "AC25" LEVEL 1;
+COMP "led_en<3>" LOCATE = SITE "AD26" LEVEL 1;
+COMP "led_en<4>" LOCATE = SITE "AD25" LEVEL 1;
+COMP "led_en<5>" LOCATE = SITE "AE24" LEVEL 1;
+COMP "led_en<6>" LOCATE = SITE "AF24" LEVEL 1;
+COMP "led_en<7>" LOCATE = SITE "AE23" LEVEL 1;
+COMP "cpld_en<0>" LOCATE = SITE "AF19" LEVEL 1;
+COMP "cpld_en<1>" LOCATE = SITE "AF23" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "AD20" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "AD21" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "AD22" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "AD23" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "AC21" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "AC22" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "AC23" LEVEL 1;
+SCHEMATIC END;
+

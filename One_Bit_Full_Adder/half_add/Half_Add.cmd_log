@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/EDA/half_add/Half_Add.xst" -ofn "D:/EDA/half_add/Half_Add.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Half_Add.ucf -p xc4vsx25-ff668-10 Half_Add.ngc Half_Add.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o Half_Add_map.ncd Half_Add.ngd Half_Add.pcf 
+par -w -intstyle ise -ol high -t 1 Half_Add_map.ncd Half_Add.ncd Half_Add.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml Half_Add.twx Half_Add.ncd -o Half_Add.twr Half_Add.pcf -ucf Half_Add.ucf 
+netgen -intstyle ise -s 10  -pcf Half_Add.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim Half_Add.ncd Half_Add_timesim.v 
+bitgen -intstyle ise -f Half_Add.ut Half_Add.ncd 

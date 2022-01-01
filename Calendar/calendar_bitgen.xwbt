@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\EDA\Calendar\calendar.ncd
+OUTFILE=D:\EDA\Calendar\calendar.bit
+FAMILY=Virtex4
+PART=xc4vsx25-10ff668
+WORKINGDIR=D:\EDA\Calendar
+LICENSE=ISE
+USER_INFO=212311847_0_0_067

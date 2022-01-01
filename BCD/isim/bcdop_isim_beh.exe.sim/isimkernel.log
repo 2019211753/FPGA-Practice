@@ -1,0 +1,28 @@
+Command line:
+   bcdop_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63361
+
+Wed Dec 29 21:40:44 2021
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5154.01 Meg
+
+ Total Signals          : 19
+ Total Nets             : 31
+ Total Signal Drivers   : 7
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 118
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 5154.01 Meg
+
+Wed Dec 29 21:40:48 2021
+

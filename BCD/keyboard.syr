@@ -1,0 +1,418 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: keyboard.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "keyboard.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "keyboard"
+Output Format                      : NGC
+Target Device                      : xc4vsx25-10-ff668
+
+---- Source Options
+Top Module Name                    : keyboard
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "keyboard.v" in library work
+Module <keyboard> compiled
+No errors in compilation
+Analysis of file <"keyboard.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <keyboard> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <keyboard>.
+Module <keyboard> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <keyboard>.
+    Related source file is "keyboard.v".
+    Found finite state machine <FSM_0> for signal <flag>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit register for signal <data>.
+    Found 1-bit register for signal <f>.
+    Found 10-bit comparator equal for signal <f$cmp_eq0000> created at line 55.
+    Found 10-bit register for signal <last>.
+    Found 6-bit register for signal <new_key_in>.
+    Found 10-bit comparator not equal for signal <new_key_in$cmp_ne0001> created at line 55.
+    Found 10-bit register for signal <now>.
+    Found 4-bit register for signal <scan>.
+    Found 32-bit up counter for signal <twenties>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <keyboard> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 6
+ 1-bit register                                        : 1
+ 10-bit register                                       : 2
+ 4-bit register                                        : 2
+ 6-bit register                                        : 1
+# Comparators                                          : 2
+ 10-bit comparator equal                               : 1
+ 10-bit comparator not equal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <flag/FSM> on signal <flag[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0001
+ 01    | 0010
+ 10    | 0100
+ 11    | 1000
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 35
+ Flip-Flops                                            : 35
+# Comparators                                          : 2
+ 10-bit comparator equal                               : 1
+ 10-bit comparator not equal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <keyboard> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block keyboard, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 71
+ Flip-Flops                                            : 71
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : keyboard.ngr
+Top Level Output File Name         : keyboard
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 164
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 31
+#      LUT2                        : 3
+#      LUT2_D                      : 1
+#      LUT2_L                      : 2
+#      LUT3                        : 6
+#      LUT3_L                      : 2
+#      LUT4                        : 32
+#      LUT4_D                      : 1
+#      LUT4_L                      : 5
+#      MUXCY                       : 44
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 71
+#      FD                          : 14
+#      FDE                         : 17
+#      FDE_1                       : 4
+#      FDR                         : 4
+#      FDRE                        : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 6
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vsx25ff668-10 
+
+ Number of Slices:                       55  out of  10240     0%  
+ Number of Slice Flip Flops:             71  out of  20480     0%  
+ Number of 4 input LUTs:                 85  out of  20480     0%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    320     4%  
+ Number of GCLKs:                         1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 71    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -10
+
+   Minimum period: 5.744ns (Maximum Frequency: 174.083MHz)
+   Minimum input arrival time before clock: 5.907ns
+   Maximum output required time after clock: 4.837ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.744ns (frequency: 174.083MHz)
+  Total number of paths / destination ports: 1885 / 112
+-------------------------------------------------------------------------
+Delay:               2.872ns (Levels of Logic = 3)
+  Source:            new_key_in_1 (FF)
+  Destination:       data_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk falling
+
+  Data Path: new_key_in_1 to data_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.360   0.797  new_key_in_1 (new_key_in_1)
+     LUT4:I0->O            1   0.195   0.585  data_mux0000<1>87 (data_mux0000<1>87)
+     LUT4:I2->O            1   0.195   0.523  data_mux0000<1>119 (data_mux0000<1>119)
+     LUT4:I3->O            1   0.195   0.000  data_mux0000<1>135 (data_mux0000<1>)
+     FDE_1:D                   0.022          data_2
+    ----------------------------------------
+    Total                      2.872ns (0.967ns logic, 1.905ns route)
+                                       (33.7% logic, 66.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 498 / 93
+-------------------------------------------------------------------------
+Offset:              5.907ns (Levels of Logic = 4)
+  Source:            key_in<2> (PAD)
+  Destination:       twenties_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: key_in<2> to twenties_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.965   0.703  key_in_2_IBUF (key_in_2_IBUF)
+     LUT3:I0->O            1   0.195   0.523  new_key_in_cmp_eq0000_inv_SW0 (N01)
+     LUT4:I3->O           35   0.195   1.103  new_key_in_cmp_eq0000_inv (new_key_in_cmp_eq0000_inv)
+     LUT2:I1->O           42   0.195   0.967  last_or0000_inv1 (last_or0000_inv)
+     FDRE:R                    1.062          twenties_0
+    ----------------------------------------
+    Total                      5.907ns (2.612ns logic, 3.295ns route)
+                                       (44.2% logic, 55.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.837ns (Levels of Logic = 1)
+  Source:            scan_3 (FF)
+  Destination:       key_out<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: scan_3 to key_out<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             12   0.360   0.520  scan_3 (scan_3)
+     OBUF:I->O                 3.957          key_out_3_OBUF (key_out<3>)
+    ----------------------------------------
+    Total                      4.837ns (4.317ns logic, 0.520ns route)
+                                       (89.3% logic, 10.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.79 secs
+ 
+--> 
+
+Total memory usage is 4530252 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

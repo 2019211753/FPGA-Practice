@@ -1,0 +1,5 @@
+set -tmpdir "D:/EDA/BCD/xst/projnav.tmp"
+set -xsthdpdir "D:/EDA/BCD/xst"
+elaborate
+-ifn keyboard.prj
+-ifmt mixed

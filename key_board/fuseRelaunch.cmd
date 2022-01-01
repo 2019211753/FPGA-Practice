@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/EDA/key_board/key_scan_isim_beh.exe" -prj "D:/EDA/key_board/key_scan_beh.prj" "work.key_scan" "work.glbl" 

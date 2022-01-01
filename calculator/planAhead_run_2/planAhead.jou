@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# PlanAhead v13.3
+# Build 147507 by hdbuild on Tue Oct  4 19:03:28 MDT 2011
+# Start of session at: Wed Dec 08 14:06:25 2021
+# Process ID: 8140
+# Log file: C:/Xilinx/key_board/planAhead_run_2/planAhead.log
+# Journal file: C:/Xilinx/key_board/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Xilinx/key_board/pa.fromNetlist.tcl
+startgroup
+set_property loc IOB_X0Y18 [get_ports {led[0]}]
+endgroup

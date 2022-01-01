@@ -1,0 +1,2 @@
+vhdl isim_temp "add_test.vhd"
+verilog isim_temp "F:/ISE1/14.7/ISE_DS/ISE//verilog/src/glbl.v"

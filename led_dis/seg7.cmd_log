@@ -1,0 +1,182 @@
+xst -intstyle ise -ifn "E:/eda/led_dis/seg7.xst" -ofn "E:/eda/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "E:/eda/led_dis/seg7.xst" -ofn "E:/eda/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "E:/eda/led_dis/seg7.xst" -ofn "E:/eda/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "E:/eda/led_dis/seg7.xst" -ofn "E:/eda/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "E:/eda/led_dis/seg7.xst" -ofn "E:/eda/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf 
+xst -intstyle ise -ifn "E:/eda/led_dis/seg7.xst" -ofn "E:/eda/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf 
+xst -intstyle ise -ifn "E:/eda/led_dis/seg7.xst" -ofn "E:/eda/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "E:/eda/led_dis/seg7.xst" -ofn "E:/eda/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "E:/eda/led_dis/seg7.xst" -ofn "E:/eda/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "E:/eda/led_dis/seg7.xst" -ofn "E:/eda/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "E:/eda/led_dis/seg7.xst" -ofn "E:/eda/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 
+bitgen -intstyle ise -f seg7.ut seg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/led_dis/seg7.xst" -ofn "C:/Users/Administrator/Desktop/led_dis/seg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cons.ucf -p xc4vsx25-ff668-10 seg7.ngc seg7.ngd  
+map -intstyle ise -p xc4vsx25-ff668-10 -global_opt off -cm area -ir off -pr off -c 100 -o seg7_map.ncd seg7.ngd seg7.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_map.ncd seg7.ncd seg7.pcf 
+trce -intstyle ise -v 3 -s 10 -n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf cons.ucf 

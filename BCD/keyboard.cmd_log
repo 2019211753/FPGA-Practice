@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/EDA/BCD/keyboard.xst" -ofn "D:/EDA/BCD/keyboard.syr" 
